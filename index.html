@@ -10,7 +10,7 @@
     <!-- This is REQUIRED for bootstrap to work correctly -->
 
     <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="..//Flying_Spaghetti_Monster/css/index.css">
 
     <title>UX/UI Bootstrap Template</title>
   </head>
@@ -18,7 +18,7 @@
     <!-- Paste Navigation Code Below -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/Users/danielenascimento/Downloads/Bootstrap_Components/Unsolved/css/FSM_Logo.svg.png" width="200" height="100" alt="Flying Spaghetti Monster Logo">
+        <img src="/Users/danielenascimento/Downloads/Bootstrap_Components/Unsolved/images/FSM_Logo.svg.png" width="100" height="50" alt="Flying Spaghetti Monster Logo">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,21 +52,112 @@
         </form>
       </div>
     </nav>
+    
     <!-- Paste Jumbotron Code Below-->
-    <div class="jumbotron">
-      <h1 class="display-4">Run for your life!</h1>
-      <p class="lead">The Flying Spaghetti Monster is here.</p>
-      <hr class="my-4">
-      <p>Bow before His Al Denteness, or face his noodley might.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Bow</a>
-    </div>
+
+    <div class="jumbotron" style="background-image: url(../images/Touched_by_His_Noodly_Appendage_HD.jpeg)" class="img-fluid" alt="Touched by His Noodley Appendage";>
+        <h1 style="font-size: 8vw" class="display-4">Run for your life!</h1>
+        <p class="lead">The Flying Spaghetti Monster is here.</p>
+        <hr class="my-4">
+        <p>Bow before His Al Denteness, or face his noodley might.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Bow</a>
+      </div>
 
     <!-- Add columns, rows, and cards Below -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+            <div class="card">
+              <img src="../images/Citizen-Dave-Dalai-Lama-03082016.jpeg" class="card-img-top" alt="Dalai Lama and FSM Meet">
+              <div class="card-body">
+                <h5 class="card-title">Meeting the Dalai Lama<span class="badge badge-info">New</span></h5>
+                <p class="card-text">The Dalai Lama and Flying Spaghetti Monster meet to discuss philosophies.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+              <div class="card">
+                <img src="../images/H.P._Lovecrafts_Call_of_Cthulhu_for_Beginning_Readers__26733.jpg" class="card-img-top" alt="Dr. Suess version of Call of Cthulthu">
+                <div class="card-body">
+                  <h5 class="card-title">Why Cthulhu is overrated</h5>
+                  <p class="card-text">Can he even fly?</p>
+                  <a href="#" class="btn btn-primary">Find out the Truth</a>
+                </div>
+              </div>
+            </div>
 
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+            <div class="card">
+              <img src="../images/WMFacts-Top5-Facts-Church-of-the-Flying-Spaghetti-Monster-720p30.jpeg" class="card-img-top" alt="Facts about FSM Image">
+              <div class="card-body">
+                <h5 class="card-title">5 Facts about the Flying Spaghetti Monster</h5>
+                <p class="card-text">He was boiled for your sins</p>
+                <a href="#" class="btn btn-primary">Praise Him</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+              <div class="card">
+                <img src="../images/Screen Shot 2022-09-17 at 1.01.18 PM.png" class="card-img-top" alt="Stained Glass FSM">
+                <div class="card-body">
+                  <h5 class="card-title">Fanart</h5>
+                  <p class="card-text">Devout tributes to our LORD and Savior</p>
+                  <a href="#" class="btn btn-primary">View all</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
     <!-- Add form group below -->
+
+      <div class="container-fluid signUp">
+        <div class="row">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Our all-knowing savior knows it anyway, this is just to show your faith</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Praise Him</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
 
     <!-- Modal -->
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" position: center >*BOWING*</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            A wise choice indeed.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Stop Bowing (Temporarily)</button>
+            <button type="button" class="btn btn-primary">Continue to Bow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- THE BELOW SCRIPT TAGS ARE REQUIRED FOR CERTAIN COMPONENTS IN BOOTSTRAP -->
